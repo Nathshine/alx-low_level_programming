@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - entry point
- * description - write all single digits
- * Return : always 0 (success)
- * */
+ * main - prints the size of various types based on
+ * the computer it is compiled to run on..
+ * Return : Always 0.
+ **/
+
 int main(void)
 {
-	int n;
-
-	for (n = 0; n<= 9; n++)
-	{ putchar (n + 48)
-	}
-	putchar ('\n');
+	printf("Size of a char: %zu byte(s)\n", sizeof(char));
+	
+	printf("Size of an int: %zu byte(s)\n", sizeof(int));
+	printf("Size of a long int: %zu byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: &zu byte(s)\n",sizeof(long long int));
+	printf("Size of a float %zu byte(s)\n", sizeof(float));
 	return (0);
 }
 
